@@ -17,7 +17,7 @@ const theme = getTheme();
 const App: React.FunctionComponent<IAppProps> = (props: React.PropsWithChildren<IAppProps>) => {
   const [ViewKey, SetViewKey] = useQuery<NavigationKey>('View', NavigationKey.Home);
   const [showSettings, setShowSettings] = React.useState(false);
-  const [Currency, SetCurrency] = useQuery<string>('Currency', 'USD');
+  const [Currency, SetCurrency] = useQuery<string>('Currency', 'GBP');
   const [WorkingDays, SetWorkingDays] = useQuery<number>('WorkingDays', 254);
   const [WorkingHours, SetWorkingHours] = useQuery<number>('WorkingHours', 7.5);
   const [EmployeeCost, SetEmployeeCost] = useQuery<number>('EmployeeCost', 100000);
